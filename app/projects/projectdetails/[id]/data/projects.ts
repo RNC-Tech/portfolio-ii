@@ -26,16 +26,16 @@ const projects: Project[] = [
     role: "Graphic Designer",
     skills: ["Graphic Design", "Digital Publication", "Character Design", "Character Animation", "Pixel Art"],
     deliverables: ["Logo Suite", "Brand Guidelines", "Social Media Assets"],
-    image: "/re-true/image_1.png",
+    image: "https://i.imgur.com/jQp9jtW.jpeg",
     status: "Completed",
     category: "Branding",
     gallery: [
-      "/re-true/image_2.png", 
-      "/re-true/image_3.gif", 
-      "/re-true/image_4.png", 
-      "/re-true/image_5.png",
-      "/re-true/image_6.png",
-      "/re-true/image_7.png"
+      "https://i.imgur.com/7rMoJFn.jpeg", 
+      "https://i.imgur.com/Kuh4fZ2.gif", 
+      "https://i.imgur.com/NeF3WfB.jpeg", 
+      "https://i.imgur.com/9COhkj3.jpeg",
+      "https://i.imgur.com/IMcQTFd.jpeg",
+      "https://i.imgur.com/U715jwn.jpeg"
     ],
     links: {
       live: "",
@@ -52,13 +52,13 @@ const projects: Project[] = [
     role: "Designer",
     skills: ["Graphic Design", "T-Shirt Design", "Design Mockup"],
     deliverables: ["Poster Set (x5)", "Press Kit Materials"],
-    image: "/titans-of-japan/image_1.png",
+    image: "https://i.imgur.com/x8d2Q95.png",
     status: "Completed",
     category: "Product Design",
     gallery: [
-      "/titans-of-japan/image_1.png", 
-      "/titans-of-japan/image_2.png", 
-      "/titans-of-japan/image_3.png"
+      "https://i.imgur.com/SnWsD7w.jpeg", 
+      "https://i.imgur.com/G2lShWG.jpeg", 
+      "https://i.imgur.com/x8d2Q95.png"
 
     ],
     links: {
@@ -76,12 +76,12 @@ const projects: Project[] = [
     role: "Designer",
     skills: ["Design Mockup"],
     deliverables: ["Product Mockup"],
-    image: "/gt-cap/image_1.png",
+    image: "https://i.imgur.com/j8YTinm.png",
     status: "Completed",
     category: "Mockup",
     gallery: [
-      "/gt-cap/image_1.png", 
-      "/gt-cap/image_2.png"
+      "https://i.imgur.com/j8YTinm.png", 
+      "https://i.imgur.com/WHv49XD.png"
     ],
     links: {
       live: "",
@@ -99,14 +99,14 @@ const projects: Project[] = [
     role: "Designer",
     skills: ["Design Mockup"],
     deliverables: ["Product Mockup"],
-    image: "/passion-for-performance/image_1.png",
+    image: "https://i.imgur.com/h4wkBwT.png",
     status: "Completed",
     category: "Mockup",
     gallery: [
-      "/passion-for-performance/image_1.png", 
-      "/passion-for-performance/image_2.png",
-      "/passion-for-performance/image_3.png",
-      "/passion-for-performance/image_4.png"
+      "https://i.imgur.com/h4wkBwT.png", 
+      "https://i.imgur.com/Fhrhmk3.jpeg",
+      "https://i.imgur.com/I1S4QMS.png",
+      "https://i.imgur.com/EBWe42c.jpeg"
     ],
     links: {
       live: "",
