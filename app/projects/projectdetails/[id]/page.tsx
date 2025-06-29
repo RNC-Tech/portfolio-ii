@@ -11,11 +11,11 @@ export async function generateStaticParams() {
 }
 
 interface PageProps {
-  params: { id: string }
+  params: Promise<{ id: string }>
 }
 
-const ProjectDetail = ({ params }: PageProps) => {
-  const { id } = params
+const ProjectDetail = async ({ params }: PageProps) => {
+  const { id } = await params
   const project = projects.find((p: Project) => p.id === parseInt(id))
 
   if (!project) {
