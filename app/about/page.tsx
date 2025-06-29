@@ -12,7 +12,7 @@ const AboutPage = () => {
           <div className="avatar">
             <div className="flex w-72 h-72 rounded-full object-cover">
               <Image 
-                src="/dp1.gif" 
+                src="https://imgur.com/a/WpJBeBi" 
                 alt="Rence Simbaya profile picture"
                 width={288}
                 height={288}
