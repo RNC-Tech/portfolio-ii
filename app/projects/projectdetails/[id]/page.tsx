@@ -1,13 +1,21 @@
-'use client'
 import React from 'react'
+import Image from 'next/image'
 import projects, { Project } from './data/projects'
+import ProjectGallery from '../../../components/ProjectGallery'
+
+// Generate static params for all project IDs
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id.toString(),
+  }))
+}
 
 interface PageProps {
-  params: Promise<{ id: string }>
+  params: { id: string }
 }
 
 const ProjectDetail = ({ params }: PageProps) => {
-  const { id } = React.use(params)
+  const { id } = params
   const project = projects.find((p: Project) => p.id === parseInt(id))
 
   if (!project) {
@@ -15,7 +23,7 @@ const ProjectDetail = ({ params }: PageProps) => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-red-600 mb-4">Project Not Found</h1>
-          <p className="text-gray-600">The project you're looking for doesn't exist.</p>
+          <p className="text-gray-600">The project you&apos;re looking for doesn&apos;t exist.</p>
         </div>
       </div>
     )
@@ -27,9 +35,11 @@ const ProjectDetail = ({ params }: PageProps) => {
         {/* Hero Section */}
         <div className="mb-12">
           <div className="relative overflow-hidden rounded-2xl shadow-2xl mb-8">
-            <img 
+            <Image 
               src={project.image} 
               alt={project.title} 
+              width={1200}
+              height={384}
               className="w-full h-96 object-cover"
             />
             <div className="absolute inset-0"></div>
@@ -87,82 +97,12 @@ const ProjectDetail = ({ params }: PageProps) => {
               </div>
             </div>
 
-            {/* Gallery Section */}
-            <div className="bg-gray-800 rounded-xl p-8 shadow-lg">
-              <h2 className="text-2xl font-bold mb-6 text-white">Project Gallery</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {project.gallery && project.gallery.length > 0 ? (
-                  project.gallery.map((image, index) => (
-                    <div 
-                      key={index} 
-                      className="bg-gray-700 rounded-lg h-48 flex items-center justify-center overflow-hidden group relative cursor-pointer"
-                      onClick={() => {
-                        const modal = document.getElementById(`modal_${project.id}_${index}`) as HTMLDialogElement;
-                        if (modal) modal.showModal();
-                      }}
-                    >
-                      <img 
-                        src={image} 
-                        alt={`${project.title} - Image ${index + 1}`}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-gray bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                        <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
-                          View Image {index + 1}
-                        </span>
-                      </div>
-                      
-                      {/* DaisyUI Modal for this image */}
-                      <dialog id={`modal_${project.id}_${index}`} className="modal">
-                        <div className="modal-box w-11/12 max-w-5xl bg-gray-800">
-                          <h3 className="font-bold text-lg text-white mb-4">{project.title} - Image {index + 1}</h3>
-                          <div className="flex justify-center mb-4">
-                            <img 
-                              src={image} 
-                              alt={`${project.title} - Image ${index + 1}`}
-                              className="max-w-full max-h-100 object-contain rounded-lg"
-                            />
-                          </div>
-                          <div className="modal-action">
-                          </div>
-                        </div>
-                        <form method="dialog" className="modal-backdrop">
-                          <button>close</button>
-                        </form>
-                      </dialog>
-                    </div>
-                  ))
-                ) : (
-                  <>
-                    <div className="bg-gray-700 rounded-lg h-48 flex items-center justify-center">
-                      <span className="text-gray-400">Main View</span>
-                    </div>
-                    <div className="bg-gray-700 rounded-lg h-48 flex items-center justify-center">
-                      <span className="text-gray-400">Detail View</span>
-                    </div>
-                    <div className="bg-gray-700 rounded-lg h-48 flex items-center justify-center">
-                      <span className="text-gray-400">Process Work</span>
-                    </div>
-                    <div className="bg-gray-700 rounded-lg h-48 flex items-center justify-center">
-                      <span className="text-gray-400">Final Result</span>
-                    </div>
-                    <div className="bg-gray-700 rounded-lg h-48 flex items-center justify-center">
-                      <span className="text-gray-400">Additional View</span>
-                    </div>
-                    <div className="bg-gray-700 rounded-lg h-48 flex items-center justify-center">
-                      <span className="text-gray-400">Close-up</span>
-                    </div>
-                  </>
-                )}
-              </div>
-              {project.gallery && project.gallery.length > 0 && (
-                <div className="mt-4 text-center">
-                  <p className="text-gray-400 text-sm">
-                    {project.gallery.length} image{project.gallery.length !== 1 ? 's' : ''} in gallery
-                  </p>
-                </div>
-              )}
-            </div>
+            {/* Gallery Section - Using Client Component */}
+            <ProjectGallery 
+              projectId={project.id}
+              projectTitle={project.title}
+              gallery={project.gallery || []}
+            />
           </div>
 
           {/* Sidebar */}
@@ -199,6 +139,45 @@ const ProjectDetail = ({ params }: PageProps) => {
                 </div>
               </div>
             </div>
+
+            {/* Links Section */}
+            {project.links && (project.links.live || project.links.github || project.links.docs) && (
+              <div className="bg-gray-800 rounded-xl p-6 shadow-lg">
+                <h3 className="text-xl font-bold mb-4 text-white">Project Links</h3>
+                <div className="space-y-3">
+                  {project.links.live && (
+                    <a 
+                      href={project.links.live} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"
+                    >
+                      View Live Site
+                    </a>
+                  )}
+                  {project.links.github && (
+                    <a 
+                      href={project.links.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block w-full bg-gray-700 hover:bg-gray-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"
+                    >
+                      View on GitHub
+                    </a>
+                  )}
+                  {project.links.docs && (
+                    <a 
+                      href={project.links.docs} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"
+                    >
+                      View Documentation
+                    </a>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

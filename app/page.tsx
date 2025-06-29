@@ -1,4 +1,3 @@
-
 import Link from 'next/link'
 
 const page = () => {
@@ -6,10 +5,10 @@ const page = () => {
       <div className='flex w-full flex-col justify-center items-start'>
         <article className='prose w-full'>
           <h1 style={{ marginBottom: '-10px' }}>Visuals with Purpose</h1>
-          <p className='w-full'>I'm a visual storyteller with a sharp eye for composition,
+          <p className='w-full'>I&apos;m a visual storyteller with a sharp eye for composition,
             color, and motion. With experience across tools like Photoshop,
             Illustrator, After Effects, and Canva, I craft visuals
-            that don't just look good—they communicate. Whether it’s
+            that don&apos;t just look good—they communicate. Whether it&apos;s
             designing standout social posts, sleek UI assets, or cinematic
             edits, I focus on clarity, emotion, and purpose. I approach each
             project with intention, blending design principles with instinct

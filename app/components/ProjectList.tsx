@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import projects from '../projects/projectdetails/[id]/data/projects'
 
 const ProjectList = () => {
@@ -9,7 +10,13 @@ const ProjectList = () => {
         <div key={project.id} className="card bg-base-100 w-full md:w-96 shadow-2xl transition-transform duration-300 hover:scale-105 hover:shadow-lg rounded-2xl">
             <Link href={`/projects/projectdetails/${project.id}`}>
                 <div>
-                    <img className='max-h-50 object-fill rounded-t-2xl' src={project.image} alt={project.title} />
+                    <Image 
+                      className='max-h-50 object-fill rounded-t-2xl' 
+                      src={project.image} 
+                      alt={project.title}
+                      width={384}
+                      height={200}
+                    />
                 </div>
             </Link>
                   

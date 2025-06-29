@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import SocMedLinks from '../components/SocMedLinks'
 
 const AboutPage = () => {
@@ -10,7 +11,13 @@ const AboutPage = () => {
         <div className='max-w-full'>
           <div className="avatar">
             <div className="flex w-72 h-72 rounded-full object-cover">
-              <img src="../dp1.gif" />
+              <Image 
+                src="/dp1.gif" 
+                alt="Rence Simbaya profile picture"
+                width={288}
+                height={288}
+                className="rounded-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -25,7 +32,7 @@ const AboutPage = () => {
             </div>
 
             <p className='text-m'>
-              I'm someone who takes pride in delivering quality work whether it's crafting clean,
+              I&apos;m someone who takes pride in delivering quality work whether it&apos;s crafting clean,
               functional websites or handling tasks with precision and care. With a background in both web
               development and graphic design, I bring a blend of technical skill and creative thinking to every project.
               I stay on top of deadlines, keep things organized, and focus on solutions that not only look good but work
