@@ -8,7 +8,7 @@ const NavBar = () => {
         <div className='rounded-full flex justify-center items-center h-full w-fit px-4 bg-gray-800 2xl:px-16 2xl:px-16 gap-4'>
             <div>
                 <Link href='/'>
-                    <button className='btn btn-primary btn-ghost btn-circle'>
+                    <button className='btn btn-primary btn-ghost btn-circle hover:scale-180 transition-all duration-100 active:scale-150'>
                     <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -27,7 +27,7 @@ const NavBar = () => {
               
             <div>
                 <Link href='/about'>
-                    <button className='btn btn-primary btn-ghost btn-circle'>
+                    <button className='btn btn-primary btn-ghost btn-circle hover:scale-180 transition-all duration-100 active:scale-150'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -46,7 +46,7 @@ const NavBar = () => {
             
             <div>
                 <Link href='/projects'>
-                    <button className='btn btn-primary btn-ghost btn-circle'>
+                    <button className='btn btn-primary btn-ghost btn-circle hover:scale-180 transition-all duration-100 active:scale-150'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
