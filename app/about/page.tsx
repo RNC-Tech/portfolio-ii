@@ -64,7 +64,7 @@ const AboutPage = () => {
                   </label>
                    {/* BIOGRAPHY */}
                   <ul className='text-base md:text-m'>
-                    <li>Created branding assets for a client's upcoming initiative.</li>
+                    <li>Created branding assets for a client&apos;s upcoming initiative.</li>
                     <li>Designed the user interface using CSS, Bootstrap, and wireframes built in Figma.</li>
                     <li>Designed and implemented multiple landing templates.</li>
                     <li>Implemented front-end designs</li>
@@ -118,7 +118,7 @@ const AboutPage = () => {
           </div>
           <div className='flex flex-col py-8 md:py-12'>
             <article className='prose'>
-              <h4 className="text-2xl md:text-4xl font-medium font-bold">Education</h4>
+              <h4 className="text-2xl md:text-4xl md:font-medium font-bold">Education</h4>
               <div className='flex flex-col gap-4'>
                 {/* EDUCATION 1 */}
                 <div className='w-full flex flex-col gap-2 card bg-gray-800 rounded-2xl p-4 md:p-8 shadow-lg hover:scale-105 transition-all duration-200'>
