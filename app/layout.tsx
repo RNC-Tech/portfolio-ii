@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <NavBar />
         <Transition>
-          <div className="px-42 py-16">
+          <div className="px-4 md:px-42 py-8 md:py-16">
             {children}
           </div>
         </Transition>
