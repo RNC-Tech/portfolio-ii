@@ -43,13 +43,14 @@ const ProjectDetail = async ({ params }: PageProps) => {
               className="w-full h-96 object-cover"
             />
           </div>
+          <h1 className="text-4xl font-bold mb-2">{project.title}</h1>
+
         </div>
 
         {/* Project Details */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:mt-0 sm:mt-110">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            <h1 className="text-4xl font-bold mb-2">{project.title}</h1>
             {/* About Section */}
             <div className="rounded-box p-8 shadow-lg bg-gray-800">
               <h2 className="text-2xl font-bold mb-4 text-white">About This Project</h2>
@@ -113,7 +114,6 @@ const ProjectDetail = async ({ params }: PageProps) => {
                     {new Date(project.publishedDate).toLocaleDateString('en-US', {
                       year: 'numeric',
                       month: 'long',
-                      day: 'numeric'
                     })}
                   </span>
                 </div>
