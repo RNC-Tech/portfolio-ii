@@ -47,7 +47,7 @@ const projects: Project[] = [
     id: 2,
     title: "Titans of Japan Collection | GT Lifestyle",
     description:
-      "The goal was to create standout t-shirt designs celebrating Japan’s iconic sports cars—the GT-R R34 and Supra MK4—for the GT Lifestyle brand. I crafted two variants featuring detailed car illustrations, bold graphics, and Japanese-inspired elements. The result merged streetwear with car culture, enhancing brand identity and resonating with automotive enthusiasts.",
+      "The goal was to create standout t-shirt designs celebrating Japan&apos;s iconic sports cars—the GT-R R34 and Supra MK4—for the GT Lifestyle brand. I crafted two variants featuring detailed car illustrations, bold graphics, and Japanese-inspired elements. The result merged streetwear with car culture, enhancing brand identity and resonating with automotive enthusiasts.",
     publishedDate: "2024-06-03",
     role: "Designer",
     skills: ["Graphic Design", "T-Shirt Design", "Design Mockup"],
@@ -71,7 +71,7 @@ const projects: Project[] = [
     id: 3,
     title: "GT Cap Collection | GT Lifestyle",
     description:
-      "The goal was to design headwear that extends the GT Lifestyle brand into everyday wear while maintaining its automotive identity. I developed two clean and modern cap variants—one in black and one in blue—featuring embroidered GT Lifestyle logos. The minimalist approach ensures versatility, while the color choices reflect the brand's aesthetic. The result: a stylish, wearable extension of the brand that appeals to both car fans and streetwear enthusiasts.",
+      "The goal was to design headwear that extends the GT Lifestyle brand into everyday wear while maintaining its automotive identity. I developed two clean and modern cap variants—one in black and one in blue—featuring embroidered GT Lifestyle logos. The minimalist approach ensures versatility, while the color choices reflect the brand&apos;s aesthetic. The result: a stylish, wearable extension of the brand that appeals to both car fans and streetwear enthusiasts.",
     publishedDate: "2025-01-22",
     role: "Designer",
     skills: ["Design Mockup"],
@@ -94,7 +94,7 @@ const projects: Project[] = [
     id: 4,
     title: "Passion For Performance | GT Lifestyle",
     description:
-      "The goal was to create a streetwear-inspired shirt that celebrates Honda’s iconic Civic EK9, specifically its Spoon Sports heritage. I designed a bold graphic featuring the EK9 in its signature livery, paired with energetic typography and layout that emphasizes performance. This design brought together GT Lifestyle’s brand identity and Autoworx's racing roots—resulting in a piece that resonated with both car enthusiasts and the motorsport community.",
+      "The goal was to create a streetwear-inspired shirt that celebrates Honda&apos;s iconic Civic EK9, specifically its Spoon Sports heritage. I designed a bold graphic featuring the EK9 in its signature livery, paired with energetic typography and layout that emphasizes performance. This design brought together GT Lifestyle&apos;s brand identity and Autoworx&apos;s racing roots—resulting in a piece that resonated with both car enthusiasts and the motorsport community.",
     publishedDate: "2025-01-22",
     role: "Designer",
     skills: ["Design Mockup"],
