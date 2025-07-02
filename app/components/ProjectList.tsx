@@ -5,9 +5,9 @@ import projects from '../projects/projectdetails/[id]/data/projects'
 
 const ProjectList = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-6">
+    <div className="flex-wrap justify-center gap-6 flex">
       {projects.map((project) => (
-        <div key={project.id} className="card w-full md:w-96 shadow-2xl bg-gray-800 transition-transform duration-300 hover:scale-105 hover:shadow-lg rounded-2xl">
+        <div key={project.id} className="card w-full md:w-96 shadow-2xl bg-gray-800 transition-transform duration-300 hover:scale-105 hover:shadow-lg rounded-2xl transition-discretefy-items-stretch justify-self-auto justify-items-start">
             <Link href={`/projects/projectdetails/${project.id}`}>
                 <div>
                     <Image 
