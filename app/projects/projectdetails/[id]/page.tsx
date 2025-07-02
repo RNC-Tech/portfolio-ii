@@ -34,7 +34,7 @@ const ProjectDetail = async ({ params }: PageProps) => {
       <div className="w-full mx-auto p-8">
         {/* Hero Section */}
         <div className="mb-12">
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl mb-8">
+          <div className="md:relative sm:absolute sm:left-0 overflow-hidden rounded-2xl shadow-2xl mb-8">
             <Image 
               src={project.image} 
               alt={project.title} 
@@ -42,18 +42,14 @@ const ProjectDetail = async ({ params }: PageProps) => {
               height={384}
               className="w-full h-96 object-cover"
             />
-            <div className="absolute inset-0"></div>
-            <div className="absolute bottom-6 left-6 text-white">
-              <h1 className="text-4xl font-bold mb-2">{project.title}</h1>
-              {/* <p className="text-xl text-gray-400 opacity-90">{project.description}</p> */}
-            </div>
           </div>
         </div>
 
         {/* Project Details */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:mt-0 sm:mt-110">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
+            <h1 className="text-4xl font-bold mb-2">{project.title}</h1>
             {/* About Section */}
             <div className="rounded-box p-8 shadow-lg bg-gray-800">
               <h2 className="text-2xl font-bold mb-4 text-white">About This Project</h2>
