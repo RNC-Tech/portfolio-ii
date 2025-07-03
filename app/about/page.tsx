@@ -53,7 +53,7 @@ const AboutPage = () => {
                 {/* JOB 1 */}
                 <div className="w-full flex flex-col gap-2 card bg-gray-800 rounded-2xl p-4 md:p-8 shadow-lg hover:scale-105 transition-all duration-200">
                   <div className="flex flex-col md:flex-row gap-2 justify-between">
-                    <h5 className="text-xl md:text-3xl font-bold text-primary text-center md:text-left">
+                    <h5 className="text-xl font-bold text-primary text-center md:text-left md:text-3xl">
                       Donaide LLC
                     </h5>
                     <span className="text-base md:text-m text-primary italic text-center md:text-left">
@@ -63,7 +63,7 @@ const AboutPage = () => {
                   <label className="font-normal text-white italic mb-2 text-center md:text-left">
                     Full Stack Developer &amp; Graphic Designer
                   </label>
-                  <ul className="text-base md:text-m text-center md:text-left">
+                  <ul className="text-base text-left md:text-m md:text-left">
                     <li>Created branding assets for a client&apos;s upcoming initiative.</li>
                     <li>Designed the user interface using CSS, Bootstrap, and wireframes built in Figma.</li>
                     <li>Designed and implemented multiple landing templates.</li>
@@ -83,7 +83,7 @@ const AboutPage = () => {
                   <label className="font-normal text-white italic mb-2 text-center md:text-left">
                     Video Editor, Graphic Designer &amp; Web Designer
                   </label>
-                  <ul className="text-base md:text-m text-center md:text-left">
+                  <ul className="text-base md:text-m text-left md:text-left">
                     <li>Created posters, advertisements, and promotional graphics using various design software.</li>
                     <li>Created assets for web essentials.</li>
                     <li>Designed the branding.</li>
@@ -103,7 +103,7 @@ const AboutPage = () => {
                   <label className="font-normal text-white italic mb-2 text-center md:text-left">
                     Web Developer Intern
                   </label>
-                  <ul className="text-base md:text-m text-center md:text-left">
+                  <ul className="text-base md:text-m text-left md:text-left">
                     <li>Developed interactive web features and supported backend development.</li>
                     <li>Designed and implemented new web pages and integrated multimedia assets.</li>
                     <li>Acquired hands-on experience using Blazor and ASP.NET frameworks.</li>
