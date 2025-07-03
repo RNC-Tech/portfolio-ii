@@ -14,6 +14,7 @@ export interface Project {
     live?: string
     github?: string
     docs?: string
+    giphy?: string
   }
 }
 
@@ -169,6 +170,70 @@ const projects: Project[] = [
       live: "",
       github: "",
       docs: ""
+    }
+  },
+
+   {
+    id: 6,
+    title: "Logo Designs",
+    description:"A collection of various branding outputs where I honed my skills in logo design, color theory, layout, and visual storytelling. Each project challenged me to explore different styles and push creative boundaries. This body of work reflects the countless hours of experimentation and growth that shaped my approach to branding and design today.",
+    publishedDate: "2018-2024",
+    role: "Graphic Designer",
+    skills: ["Graphic Design", "Digital Publication", "Character Design", "Pixel Art"],
+    deliverables: ["Logo Suite", "Brand Guidelines", "Social Media Assets", "Motion Graphic Animations", "Social Media Assets", "Custom Sprite Character Animations", "GIFs"],
+    image: "https://i.imgur.com/Zm0V3vS.png",
+    status: "Completed",
+    category: "Branding",
+    gallery: [
+      { type: 'image', src: "https://i.imgur.com/66Io3Ox.png" },
+      { type: 'image', src: "https://i.imgur.com/Z4I5FFD.jpeg" },
+      { type: 'image', src: "https://i.imgur.com/7CAA2Q8.png" },
+      { type: 'image', src: "https://i.imgur.com/l9g1y8N.png" },
+      { type: 'image', src: "https://i.imgur.com/PbNz0nD.jpeg" },
+      { type: 'image', src: "https://i.imgur.com/mwNoSx6.png" },
+      { type: 'image', src: "https://i.imgur.com/hP6MUbR.jpeg" },
+      { type: 'image', src: "https://i.imgur.com/6xY4MZy.jpeg" },
+      { type: 'image', src: "https://i.imgur.com/EqKcEcM.jpeg" },
+      { type: 'image', src: "https://i.imgur.com/lCrWOCt.jpeg" }
+
+    ],
+    links: {
+      live: "",
+      github: "",
+      docs: ""
+    }
+  },
+   
+   {
+    id: 7,
+    title: "Motion Graphic Animations",
+    description:"A showcase of motion graphic animations created for branding, social media, and promotional content. These projects allowed me to combine timing, typography, and visual rhythm to bring static designs to life. I explored dynamic transitions, kinetic text, and animated logos to enhance storytelling and viewer engagement. Each animation reflects a balance of creativity and precision in motion design. [Giphy GIF Collections] 'https://giphy.com/channel/RNCTech2001'",
+    publishedDate: "2018-2024",
+    role: "Motion Graphic Director/Artist",
+    skills: ["Graphic Design", "Digital Publication", "Character Design", "Pixel Art", "Motion Graphic"],
+    deliverables: ["Logo Suite", "Brand Guidelines", "Social Media Assets", "Motion Graphic Animations", "Social Media Assets", "Custom Sprite Character Animations", "GIFs"],
+    image: "https://i.imgur.com/ibv7fu9.gif",
+    status: "Completed",
+    category: "Branding",
+     gallery: [
+      { type: 'video', src: 'https://www.youtube.com/watch?v=3FrmSY-m3nQ' },
+      { type: 'video', src: 'https://www.youtube.com/watch?v=Y63V1Gp8IRM' },
+      { type: 'video', src: 'https://www.youtube.com/watch?v=suTSIDAXiY0' },
+      { type: 'video', src: 'https://www.youtube.com/watch?v=T8ZZ7TaZnnk' },
+      { type: 'video', src: 'https://www.youtube.com/watch?v=HUocjZC3kJ4' },
+      { type: 'video', src: 'https://www.youtube.com/watch?v=Y8O1uIjX81I' },
+       { type: 'video', src: 'https://www.youtube.com/watch?v=9KFykxPINOs' },
+      { type: 'video', src: 'https://www.youtube.com/watch?v=-zbuzJU-cuY' },
+      { type: 'video', src: 'https://www.youtube.com/watch?v=9KFykxPINOs' },
+      
+
+
+    ],
+    links: {
+      live: "",
+      github: "",
+      docs: "",
+      giphy: "https://giphy.com/channel/RNCTech2001",
     }
   }
 
