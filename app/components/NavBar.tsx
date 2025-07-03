@@ -6,10 +6,10 @@ const NavBar = () => {
   return (
     <div className='sticky top-0 z-50 w-full flex justify-center items-center h-24 p-4'>
         <div className='rounded-full flex justify-center items-center h-full w-fit px-4 bg-gray-800 2xl:px-16 2xl:px-16 gap-4'>
-            <div>
+            <div className="relative flex flex-col items-center group">
                 <Link href='/'>
                     <button className='btn btn-primary btn-ghost btn-circle hover:scale-180 transition-all duration-100 active:scale-150'>
-                    <svg
+                        <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
                             fill="none"
@@ -23,9 +23,12 @@ const NavBar = () => {
                         </svg>
                     </button>
                 </Link>
+                <span className="absolute top-14 scale-0 group-hover:scale-100 transition-all bg-gray-700 text-white text-xs rounded px-2 py-1 mt-1 z-50">
+                    Home
+                </span>
             </div>
-              
-            <div>
+            
+            <div className="relative flex flex-col items-center group">
                 <Link href='/about'>
                     <button className='btn btn-primary btn-ghost btn-circle hover:scale-180 transition-all duration-100 active:scale-150'>
                         <svg
@@ -42,9 +45,12 @@ const NavBar = () => {
                         </svg>
                     </button>
                 </Link>
+                <span className="absolute top-14 scale-0 group-hover:scale-100 transition-all bg-gray-700 text-white text-xs rounded px-2 py-1 mt-1 z-50">
+                    About
+                </span>
             </div>
             
-            <div>
+            <div className="relative flex flex-col items-center group">
                 <Link href='/projects'>
                     <button className='btn btn-primary btn-ghost btn-circle hover:scale-180 transition-all duration-100 active:scale-150'>
                         <svg
@@ -58,6 +64,9 @@ const NavBar = () => {
                         </svg>
                     </button>
                 </Link>
+                <span className="absolute top-14 scale-0 group-hover:scale-100 transition-all bg-gray-700 text-white text-xs rounded px-2 py-1 mt-1 z-50">
+                    Projects
+                </span>
             </div>
         </div>
     </div>
