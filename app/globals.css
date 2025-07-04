@@ -4,7 +4,7 @@
 
 /* Custom Cursor Styles */
 body {
-  cursor: url('https: //sweezy-cursors.com/wp-content/uploads/cursor/rock-on-hand-windows-animated/rock-on-hand-windows-animated-cursor-32x32.png'), auto;
+  cursor: url('https://sweezy-cursors.com/wp-content/uploads/cursor/rock-on-hand-windows-animated/rock-on-hand-windows-animated-cursor-32x32.png'), auto;
 }
 
 /* Click cursor for buttons and links */
@@ -14,14 +14,14 @@ a,
 .btn,
 input[type="submit"],
 input[type="button"] {
-  cursor: url('https: //sweezy-cursors.com/wp-content/uploads/cursor/rock-on-hand-windows-pixel-animated/rock-on-hand-windows-animated-pointer-32x32.png'), pointer;
+  cursor: url('https://sweezy-cursors.com/wp-content/uploads/cursor/rock-on-hand-windows-pixel-animated/rock-on-hand-windows-animated-pointer-32x32.png'), pointer;
 }
 
 /* Optional: Different cursor for clickable elements */
 .card,
 .avatar,
 [onClick] {
-  cursor: url('https: //sweezy-cursors.com/wp-content/uploads/cursor/rock-on-hand-windows-pixel-animated/rock-on-hand-windows-animated-pointer-32x32.png'), pointer;
+  cursor: url('https://sweezy-cursors.com/wp-content/uploads/cursor/rock-on-hand-windows-pixel-animated/rock-on-hand-windows-animated-pointer-32x32.png'), pointer;
 }
 
 /* Ensure cursor changes on hover for interactive elements */
@@ -34,5 +34,5 @@ input[type="button"]:hover,
 .card:hover,
 .avatar:hover,
 [onClick]:hover {
-  cursor: url('/cursor-click.png'), pointer;
+  cursor: url('https://sweezy-cursors.com/wp-content/uploads/cursor/windows-95-98-wag-tail-animated/windows-95-98-wag-tail-animated-pointer-32x32.png'), pointer;
 }
