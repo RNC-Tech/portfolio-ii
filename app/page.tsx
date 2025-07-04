@@ -1,11 +1,12 @@
 'use client';
 import Link from 'next/link'
+import Image from 'next/image'
 import useSound from './components/useSound';
 
 const buttonHoverSound = 'https://d1aht2gieyw871.cloudfront.net/z8wx6w%2Ffile%2F443278c0d3195c51cb44af6a3d99fa4b_e8ac2773334397a4e048e9b174f041de.wav?response-content-disposition=inline%3Bfilename%3D%22443278c0d3195c51cb44af6a3d99fa4b_e8ac2773334397a4e048e9b174f041de.wav%22%3B&response-content-type=audio%2Fx-wav&Expires=1751683615&Signature=DwOEtbT8qs59JPSYTXktJonmAIrZR481vDRMYErm~ah1X6wyT1e-33nkyY9Bn6hB~xtmY8Eagex0tQYcYb2o8SW22gU3aOG0gb-3OUlRdNZTID2euxZ7cyx6c6xFlrrbQBGFXXUErRUt~7dpyEj5GFO28olszWc8g52j44U3md7Ns6PMgnF8~PCRzCzgpZTlA0Kf85J7Hg-9JhSezunMsJRbNgsi1V9cAuOID1xYgtosgJB8SNvscRLK4SGSx4s1e3lsSh2zwEcaLwjIMV79m8eG4Uyk9sixidPLgQhweVBmXe6K8pDQaF0UAspjmYReHa8Kr6cItUXu0oWCVKfqlQ__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ';
 const buttonClickSound = 'https://dz0i85a16ad4a.cloudfront.net/t8ux6w%2Ffile%2F9f99ae93281d3e862878318fd3696264_96dac53aebf63ab3236b8c1c1147ef19.wav?response-content-disposition=inline%3Bfilename%3D%229f99ae93281d3e862878318fd3696264_96dac53aebf63ab3236b8c1c1147ef19.wav%22%3B&response-content-type=audio%2Fx-wav&Expires=1751683645&Signature=E4nBeO5piFCL7Bmnd602FqJq5FDo9YfcgI6nn2CDV1OO-6IKoamDdQBnMeS1xRdUzEwGkkIKk~VYlAlYrroUIHHlr1Q7o0~0jgyBS9dZ6dzvedpSTnsdu8hC89ifPY8aBd-SdKg7pZLD4f8PYK-QaWBq4RToTuIXhh6-LAiBwskp80a4cMpYBFi~nN6v4n0Oq8GucZSouNRtkONxYvdsbGPoHmglKy1cvA26ULUVznxui8Ltgg11ACWBnCFV8O~dEKcYDVUCp85htyReXiUtol6yvCaLRJviNr7gDefwtddNcf67OJTYMxpNTiOE6Oii2Rx-M1i5-M7hKIN8wHMa0Q__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ';
 
-const page = () => {
+const Page = () => {
   const playButtonHover = useSound(buttonHoverSound, 0.2);
   const playButtonClick = useSound(buttonClickSound, 0.2);
 
@@ -27,9 +28,11 @@ const page = () => {
           {/* Image */}
           <div className="flex-shrink-0 flex justify-center lg:justify-start w-full lg:w-auto">
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl">
-              <img 
+              <Image 
                 src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDBvMjN0ZHpjd2V5NmhoYTM2aWphdXNnZXh0ZGI4MmQ4cDlsZTc4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/935gCxva4XOcgtBbdO/giphy.gif" 
                 alt="Visuals with Purpose" 
+                width={384}
+                height={384}
                 className="w-full h-full object-contain rounded-2xl animate-bounce"
               />
             </div>
@@ -64,4 +67,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
