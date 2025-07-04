@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar";
 import Transition from "./components/Transition";
+import AudioControl from "./components/AudioControl";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,10 +32,11 @@ export default function RootLayout({
       >
         <NavBar />
         <Transition>
-          <div className="px-4 md:px-42 py-8 md:py-16">
+          <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 sm:py-8 md:py-12 lg:py-16">
             {children}
           </div>
         </Transition>
+        <AudioControl />
       </body>
     </html>
   );
