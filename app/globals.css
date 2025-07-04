@@ -1,3 +1,38 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @plugin "@tailwindcss/typography";
+
+/* Custom Cursor Styles */
+body {
+  cursor: url('https: //sweezy-cursors.com/wp-content/uploads/cursor/rock-on-hand-windows-animated/rock-on-hand-windows-animated-cursor-32x32.png'), auto;
+}
+
+/* Click cursor for buttons and links */
+button, 
+a, 
+[role="button"],
+.btn,
+input[type="submit"],
+input[type="button"] {
+  cursor: url('https: //sweezy-cursors.com/wp-content/uploads/cursor/rock-on-hand-windows-pixel-animated/rock-on-hand-windows-animated-pointer-32x32.png'), pointer;
+}
+
+/* Optional: Different cursor for clickable elements */
+.card,
+.avatar,
+[onClick] {
+  cursor: url('https: //sweezy-cursors.com/wp-content/uploads/cursor/rock-on-hand-windows-pixel-animated/rock-on-hand-windows-animated-pointer-32x32.png'), pointer;
+}
+
+/* Ensure cursor changes on hover for interactive elements */
+button:hover, 
+a:hover, 
+[role="button"]:hover,
+.btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.card:hover,
+.avatar:hover,
+[onClick]:hover {
+  cursor: url('/cursor-click.png'), pointer;
+}
