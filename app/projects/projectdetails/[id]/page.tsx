@@ -50,7 +50,7 @@ const ProjectDetail = async ({ params }: PageProps) => {
 
       {/* Project Info Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-        <div className="bg-gray-800 rounded-2xl p-6 text-center">
+        <div className="bg-base-200 rounded-2xl p-6 text-center">
           <h3 className="text-sm font-medium text-gray-400 mb-2">Published</h3>
           <p className="text-base md:text-lg font-semibold text-white">
             {new Date(project.publishedDate).toLocaleDateString('en-US', {
@@ -59,19 +59,19 @@ const ProjectDetail = async ({ params }: PageProps) => {
             })}
           </p>
         </div>
-        <div className="bg-gray-800 rounded-2xl p-6 text-center">
+        <div className="bg-base-200 rounded-2xl p-6 text-center">
           <h3 className="text-sm font-medium text-gray-400 mb-2">Status</h3>
           <span className="inline-block bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
             {project.status || 'Completed'}
           </span>
         </div>
-        <div className="bg-gray-800 rounded-2xl p-6 text-center">
+        <div className="bg-base-200 rounded-2xl p-6 text-center">
           <h3 className="text-sm font-medium text-gray-400 mb-2">Category</h3>
           <p className="text-base md:text-lg font-semibold text-white">
             {project.category || project.skills[0]}
           </p>
         </div>
-        <div className="bg-gray-800 rounded-2xl p-6 text-center">
+        <div className="bg-base-200 rounded-2xl p-6 text-center">
           <h3 className="text-sm font-medium text-gray-400 mb-2">Role</h3>
           <p className="text-base md:text-lg font-semibold text-white">{project.role}</p>
         </div>
@@ -80,7 +80,7 @@ const ProjectDetail = async ({ params }: PageProps) => {
       {/* About Section */}
       <section className="mb-12">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center lg:text-left">About This Project</h2>
-        <div className="bg-gray-800 rounded-2xl p-6 md:p-8 shadow-lg">
+        <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg">
           <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-4">
             {project.description}
           </p>
@@ -95,7 +95,7 @@ const ProjectDetail = async ({ params }: PageProps) => {
       {/* Skills Section */}
       <section className="mb-12">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center lg:text-left">Skills & Technologies</h2>
-        <div className="bg-gray-800 rounded-2xl p-6 md:p-8 shadow-lg">
+        <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg">
           <div className="flex flex-wrap gap-3">
             {project.skills.map((skill, index) => (
               <span 
@@ -112,7 +112,7 @@ const ProjectDetail = async ({ params }: PageProps) => {
       {/* Deliverables Section */}
       <section className="mb-12">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center lg:text-left">Deliverables</h2>
-        <div className="bg-gray-800 rounded-2xl p-6 md:p-8 shadow-lg">
+        <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {project.deliverables.map((deliverable, index) => (
               <div key={index} className="flex items-start space-x-3">
