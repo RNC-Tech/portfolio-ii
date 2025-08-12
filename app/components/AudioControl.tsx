@@ -10,7 +10,7 @@ declare global {
   }
 }
 
-const buttonHoverSound = 'https://d1aht2gieyw871.cloudfront.net/z8wx6w%2Ffile%2F443278c0d3195c51cb44af6a3d99fa4b_e8ac2773334397a4e048e9b174f041de.wav?response-content-disposition=inline%3Bfilename%3D%22443278c0d3195c51cb44af6a3d99fa4b_e8ac2773334397a4e048e9b174f041de.wav%22%3B&response-content-type=audio%2Fx-wav&Expires=1751683615&Signature=DwOEtbT8qs59JPSYTXktJonmAIrZR481vDRMYErm~ah1X6wyT1e-33nkyY9Bn6hB~xtmY8Eagex0tQYcYb2o8SW22gU3aOG0gb-3OUlRdNZTID2euxZ7cyx6c6xFlrrbQBGFXXUErRUt~7dpyEj5GFO28olszWc8g52j44U3md7Ns6PMgnF8~PCRzCzgpZTlA0Kf85J7Hg-9JhSezunMsJRbNgsi1V9cAuOID1xYgtosgJB8SNvscRLK4SGSx4s1e3lsSh2zwEcaLwjIMV79m8eG4Uyk9sixidPLgQhweVBmXe6K8pDQaF0UAspjmYReHa8Kr6cItUXu0oWCVKfqlQ__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ';
+const buttonHoverSound = 'https://cdn.pixabay.com/audio/2025/01/14/audio_5ba8ff5311.mp3';
 
 const AudioControl = () => {
   const [isMuted, setIsMuted] = useState(false);
@@ -129,7 +129,7 @@ const AudioControl = () => {
           onClick={toggleAudio}
           onMouseEnter={playHover}
           className={`btn btn-primary btn-ghost btn-circle w-14 h-14 
-            ${isMuted ? 'bg-red-200 border-red-300 hover:bg-red-300 hover:border-red-400' : 'bg-gray-800 border-gray-600 hover:bg-gray-700 hover:border-gray-500'}
+            ${isMuted ? 'bg-red-200 border-red-300 hover:bg-red-300 hover:border-red-400' : 'bg-base-200 border-gray-600 hover:bg-base-300 hover:border-gray-500'}
             rounded-full shadow-lg 
             hover:scale-180 transition-all duration-100 active:scale-150 flex items-center justify-center group`}
           title={isMuted ? "Unmute" : "Mute"}
