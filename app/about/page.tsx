@@ -57,12 +57,12 @@ const AboutPage = () => {
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center lg:text-left">Work Experience</h2>
         <div className="space-y-6">
           {/* JOB 1 */}
-          <div className="bg-gray-800 rounded-2xl p-6 md:p-8 shadow-lg hover:scale-105 transition-all duration-200" onMouseEnter={playCardHover}>
+          <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg hover:scale-105 transition-all duration-200" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <h3 className="text-xl md:text-2xl font-extrabold text-primary">
                 Donaide LLC
               </h3>
-              <span className="text-sm md:text-base text-blue-300 italic">
+              <span className="text-sm md:text-base text-primary italic">
                 August 2024 - April 2025
               </span>
             </div>
@@ -78,12 +78,12 @@ const AboutPage = () => {
           </div>
 
           {/* JOB 2 */}
-          <div className="bg-gray-800 rounded-2xl p-6 md:p-8 shadow-lg hover:scale-105 transition-all duration-200" onMouseEnter={playCardHover}>
+          <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg hover:scale-105 transition-all duration-200" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <h3 className="text-xl md:text-2xl font-extrabold text-primary">
                 The Gaming VA
               </h3>
-              <span className="text-sm md:text-base text-blue-300 italic">
+              <span className="text-sm md:text-base text-primary italic">
                 June 2023 - November 2024
               </span>
             </div>
@@ -99,12 +99,12 @@ const AboutPage = () => {
           </div>
 
           {/* JOB 3 */}
-          <div className="bg-gray-800 rounded-2xl p-6 md:p-8 shadow-lg hover:scale-105 transition-all duration-200" onMouseEnter={playCardHover}>
+          <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg hover:scale-105 transition-all duration-200" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <h3 className="text-xl md:text-2xl font-extrabold text-primary">
                 Rapid Signal Electronics
               </h3>
-              <span className="text-sm md:text-base text-blue-300 italic">
+              <span className="text-sm md:text-base text-primary italic">
                 June 2023 - August 2023
               </span>
             </div>
@@ -123,7 +123,7 @@ const AboutPage = () => {
       {/* Education Section */}
       <section className="mt-16">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center lg:text-left">Education</h2>
-        <div className="bg-gray-800 rounded-2xl p-6 md:p-8 shadow-lg" onMouseEnter={playCardHover}>
+        <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg" onMouseEnter={playCardHover}>
           <h3 className="text-xl md:text-2xl font-bold mb-2">
             Notre Dame of Dadiangas University
           </h3>
