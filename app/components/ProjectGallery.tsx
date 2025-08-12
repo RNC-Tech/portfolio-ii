@@ -23,10 +23,9 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
   const videoMediaRefs = useRef<(HTMLIFrameElement | HTMLVideoElement | null)[]>([]);
 
   return (
-    <div className="bg-gray-800 rounded-xl p-8 shadow-lg">
-      <h2 className="text-2xl font-bold mb-6 text-white">Project Gallery</h2>
+    <div className="rounded-2xl">
       {/* DaisyUI Tabs - LIFT STYLE */}
-      <div className="tabs tabs-lift mb-6 w-full">
+      <div className="tabs tabs-lift mb-6 w-full bg-base-200 rounded-2xl">
         {/* Images Tab */}
         <label className="tab">
           <input type="radio" name={`gallery_tabs_${projectId}`} defaultChecked />
@@ -42,7 +41,7 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
                 return (
                   <div
                     key={index}
-                    className="bg-gray-700 rounded-lg h-48 flex items-center justify-center overflow-hidden group relative cursor-pointer"
+                    className="bg-base-100 rounded-lg h-48 flex items-center justify-center overflow-hidden group relative cursor-pointer"
                     onClick={() => {
                       imageDialogRefs.current[index]?.showModal();
                     }}
@@ -65,7 +64,7 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
                       id={`modal_${projectId}_img_${index}`}
                       className="modal"
                     >
-                      <div className="modal-box w-5/6 max-w-4xl min-h-[85vh] bg-gray-800">
+                      <div className="modal-box w-5/6 max-w-4xl min-h-[85vh] bg-base-200">
                         <h3 className="font-bold text-lg text-white mb-4">{projectTitle} - Image {index + 1}</h3>
                         <div className="flex justify-center mb-4">
                           <Image
@@ -155,7 +154,7 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
                         }
                       }}
                     >
-                      <div className="modal-box w-full max-w-3xl bg-gray-800">
+                      <div className="modal-box w-full max-w-3xl bg-base-200">
                         <h3 className="font-bold text-lg text-white mb-4">{projectTitle} - Video {index + 1}</h3>
                         <div className="flex justify-center mb-4">
                           {item.src.includes('youtube.com') || item.src.includes('youtu.be') ? (
