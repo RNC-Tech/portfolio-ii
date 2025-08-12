@@ -72,3 +72,9 @@ input[type="button"]:hover,
 [onClick]:hover {
   cursor: url('https://sweezy-cursors.com/wp-content/uploads/cursor/windows-95-98-wag-tail-animated/windows-95-98-wag-tail-animated-pointer-32x32.png'), pointer;
 }
+
+.dither-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
