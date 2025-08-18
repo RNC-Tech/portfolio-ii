@@ -40,10 +40,10 @@ const Page = () => {
 
           {/* Content */}
           <div className="flex-1 w-full text-center lg:text-left">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 glass-text">
               Visuals with Purpose
             </h1>
-            <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0 glass-text-secondary">
               I&apos;m a visual storyteller with a sharp eye for composition,
               color, and motion. With experience across tools like Photoshop,
               Illustrator, After Effects, and Canva, I craft visuals
@@ -55,7 +55,7 @@ const Page = () => {
             </p>
             <div className="flex justify-center lg:justify-start">
               <Link href='/about'>
-                <button className='btn btn-primary rounded-full px-8 py-4 text-base md:text-lg hover:scale-105 transition-all duration-200 active:scale-100' onMouseEnter={playButtonHover} onClick={handleButtonClick}>
+                <button className='glass-btn glass-hover px-8 py-4 text-base md:text-lg' onMouseEnter={playButtonHover} onClick={handleButtonClick}>
                   Learn more about RNC
                 </button>
               </Link>
