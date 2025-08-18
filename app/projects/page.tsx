@@ -1,10 +1,14 @@
 import React from 'react'
 import ProjectList from '../components/ProjectList'
+import { getAllProjects } from '../../lib/projects'
 
-const ProjectsPage = () => {
+const ProjectsPage = async () => {
+  // Fetch projects on the server side
+  const projects = getAllProjects()
+
   return (
     <div>
-       <ProjectList/>   
+       <ProjectList projects={projects}/>   
     </div>
   )
 }
