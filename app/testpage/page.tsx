@@ -54,7 +54,7 @@ export default function AudioResponsiveBackground() {
       }
       
       // Create audio context
-      audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
+      audioContextRef.current = new (window.AudioContext || (window as typeof window & { webkitAudioContext: typeof AudioContext }).webkitAudioContext)();
       const audioContext = audioContextRef.current;
 
       // Create analyser
