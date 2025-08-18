@@ -12,10 +12,10 @@ const NavBar = () => {
 
   return (
     <div className='sticky top-0 z-50 w-full flex justify-center items-center h-24 p-4'>
-        <div className='rounded-full flex justify-center items-center h-full w-fit px-4 bg-base-200 2xl:px-16 gap-4'>
+        <div className='rounded-full flex justify-center items-center h-full w-fit px-4 glass-nav 2xl:px-16 gap-4'>
             <div className="relative flex flex-col items-center group">
                 <Link href='/'>
-                    <button className='btn btn-primary btn-ghost btn-circle hover:scale-180 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
+                    <button className='glass-btn glass-hover btn-circle hover:scale-180 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -30,14 +30,14 @@ const NavBar = () => {
                         </svg>
                     </button>
                 </Link>
-                <span className="absolute top-14 scale-0 group-hover:scale-100 transition-all bg-gray-700 text-white text-xs rounded px-2 py-1 mt-1 z-50">
+                <span className="absolute top-14 scale-0 group-hover:scale-100 transition-all glass-card text-white text-xs rounded px-2 py-1 mt-1 z-50">
                     Home
                 </span>
             </div>
             
             <div className="relative flex flex-col items-center group">
                 <Link href='/about'>
-                    <button className='btn btn-primary btn-ghost btn-circle hover:scale-180 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
+                    <button className='glass-btn glass-hover btn-circle hover:scale-180 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -52,14 +52,14 @@ const NavBar = () => {
                         </svg>
                     </button>
                 </Link>
-                <span className="absolute top-14 scale-0 group-hover:scale-100 transition-all bg-gray-700 text-white text-xs rounded px-2 py-1 mt-1 z-50">
+                <span className="absolute top-14 scale-0 group-hover:scale-100 transition-all glass-card text-white text-xs rounded px-2 py-1 mt-1 z-50">
                     About
                 </span>
             </div>
             
             <div className="relative flex flex-col items-center group">
                 <Link href='/projects'>
-                    <button className='btn btn-primary btn-ghost btn-circle hover:scale-180 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
+                    <button className='glass-btn glass-hover btn-circle hover:scale-180 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -71,7 +71,7 @@ const NavBar = () => {
                         </svg>
                     </button>
                 </Link>
-                <span className="absolute top-14 scale-0 group-hover:scale-100 transition-all bg-gray-700 text-white text-xs rounded px-2 py-1 mt-1 z-50">
+                <span className="absolute top-14 scale-0 group-hover:scale-100 transition-all glass-card text-white text-xs rounded px-2 py-1 mt-1 z-50">
                     Projects
                 </span>
             </div>
