@@ -1,7 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import { getAllProjects, getProjectBySlug, getAllSlugs, Project } from '../../../../lib/projects'
-import ProjectGallery from '../../../components/ProjectGallery'
+import { getProjectBySlug, getAllSlugs } from '../../../../lib/projects'
 import ProjectDetailClient from './ProjectDetailClient'
 
 // Generate static params for all project slugs
