@@ -128,10 +128,7 @@ const AudioControl = () => {
         <button
           onClick={toggleAudio}
           onMouseEnter={playHover}
-          className={`btn btn-primary btn-ghost btn-circle w-14 h-14 
-            ${isMuted ? 'bg-red-200 border-red-300 hover:bg-red-300 hover:border-red-400' : 'bg-base-200 border-gray-600 hover:bg-base-300 hover:border-gray-500'}
-            rounded-full shadow-lg 
-            hover:scale-180 transition-all duration-100 active:scale-150 flex items-center justify-center group`}
+          className={`glass-btn glass-hover w-14 h-14 rounded-full flex items-center justify-center group`}
           title={isMuted ? "Unmute" : "Mute"}
         >
           {isMuted ? (
