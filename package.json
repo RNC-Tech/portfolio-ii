@@ -13,11 +13,14 @@
     "@react-three/postprocessing": "^3.0.4",
     "daisyui": "^5.0.43",
     "framer-motion": "^12.19.2",
+    "gray-matter": "^4.0.3",
     "next": "15.3.4",
     "postprocessing": "^6.37.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.3",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "three": "^0.179.1"
   },
   "devDependencies": {
