@@ -15,7 +15,7 @@ const SocMedLinks = () => {
                 href="https://www.linkedin.com/in/rncsimbaya/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-[#0A66C2] text-white border-[#004182] h-12 px-5 text-base md:h-8 md:px-3 md:text-sm w-fit rounded-full flex items-center gap-2 hover:scale-115 transition-all duration-200 active:scale-105"
+                className="glass-btn glass-hover h-12 px-5 text-base md:h-8 md:px-3 md:text-sm w-fit rounded-full flex items-center gap-2"
                 onMouseEnter={playButtonHover}
                 onClick={playButtonClick}
             >
@@ -29,7 +29,7 @@ const SocMedLinks = () => {
                 href="https://www.upwork.com/freelancers/~014bdc570b02230b5b?mp_source=share"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-[#14A800] text-white border-[#0B6A0B] h-12 px-5 text-base md:h-8 md:px-3 md:text-sm w-fit rounded-full flex items-center gap-2 hover:scale-115 transition-all duration-200 active:scale-105"
+                className="glass-btn glass-hover h-12 px-5 text-base md:h-8 md:px-3 md:text-sm w-fit rounded-full flex items-center gap-2"
                 onMouseEnter={playButtonHover}
                 onClick={playButtonClick}
             >
@@ -41,7 +41,7 @@ const SocMedLinks = () => {
 
             <a
                 href="mailto:rncsimbaya@gmail.com"
-                className="btn bg-[#3A3D41] text-white border-[#2F3136] h-12 px-5 text-base md:h-8 md:px-3 md:text-sm w-fit rounded-full flex items-center gap-2 hover:scale-115 transition-all duration-200 active:scale-105"
+                className="glass-btn glass-hover h-12 px-5 text-base md:h-8 md:px-3 md:text-sm w-fit rounded-full flex items-center gap-2"
                 onMouseEnter={playButtonHover}
                 onClick={playButtonClick}
             >
