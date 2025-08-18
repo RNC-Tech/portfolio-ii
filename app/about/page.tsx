@@ -31,8 +31,8 @@ const AboutPage = () => {
         <div className="flex-1 w-full">
           {/* Name and Title */}
           <div className="text-center lg:text-left mb-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">Rence Simbaya</h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-4">Web Designer &amp; Graphic Designer</p>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 glass-text">Rence Simbaya</h1>
+            <p className="text-lg md:text-xl text-gray-300 mb-4 glass-text-secondary">Web Designer &amp; Graphic Designer</p>
             <div className="flex justify-center lg:justify-start">
               <SocMedLinks />
             </div>
@@ -40,7 +40,7 @@ const AboutPage = () => {
 
           {/* Biography */}
           <div className="mb-12">
-            <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed glass-text-secondary">
               I&apos;m someone who takes pride in delivering quality work whether it&apos;s crafting clean,
               functional websites or handling tasks with precision and care. With a background in both web
               development and graphic design, I bring a blend of technical skill and creative thinking to every project.
@@ -54,22 +54,22 @@ const AboutPage = () => {
 
       {/* Work Experience Section */}
       <section className="mt-16">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center lg:text-left">Work Experience</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center lg:text-left glass-text">Work Experience</h2>
         <div className="space-y-6">
           {/* JOB 1 */}
-          <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg hover:scale-105 transition-all duration-200" onMouseEnter={playCardHover}>
+          <div className="glass-card glass-hover p-6 md:p-8" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
-              <h3 className="text-xl md:text-2xl font-extrabold text-primary">
+              <h3 className="text-xl md:text-2xl font-extrabold text-primary glass-text">
                 Donaide LLC
               </h3>
-              <span className="text-sm md:text-base text-primary italic">
+              <span className="text-sm md:text-base text-primary italic glass-text-secondary">
                 August 2024 - April 2025
               </span>
             </div>
-            <p className="text-white italic mb-4 text-base md:text-lg">
+            <p className="text-white italic mb-4 text-base md:text-lg glass-text">
               Full Stack Developer &amp; Graphic Designer
             </p>
-            <ul className="space-y-2 text-base md:text-lg text-gray-300">
+            <ul className="space-y-2 text-base md:text-lg text-gray-300 glass-text-secondary">
               <li>• Created branding assets for a client&apos;s upcoming initiative.</li>
               <li>• Designed the user interface using CSS, Bootstrap, and wireframes built in Figma.</li>
               <li>• Designed and implemented multiple landing templates.</li>
@@ -78,19 +78,19 @@ const AboutPage = () => {
           </div>
 
           {/* JOB 2 */}
-          <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg hover:scale-105 transition-all duration-200" onMouseEnter={playCardHover}>
+          <div className="glass-card glass-hover p-6 md:p-8" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
-              <h3 className="text-xl md:text-2xl font-extrabold text-primary">
+              <h3 className="text-xl md:text-2xl font-extrabold text-primary glass-text">
                 The Gaming VA
               </h3>
-              <span className="text-sm md:text-base text-primary italic">
+              <span className="text-sm md:text-base text-primary italic glass-text-secondary">
                 June 2023 - November 2024
               </span>
             </div>
-            <p className="text-white italic mb-4 text-base md:text-lg">
+            <p className="text-white italic mb-4 text-base md:text-lg glass-text">
               Video Editor, Graphic Designer &amp; Web Designer
             </p>
-            <ul className="space-y-2 text-base md:text-lg text-gray-300">
+            <ul className="space-y-2 text-base md:text-lg text-gray-300 glass-text-secondary">
               <li>• Created posters, advertisements, and promotional graphics using various design software.</li>
               <li>• Created assets for web essentials.</li>
               <li>• Designed the branding.</li>
@@ -99,19 +99,19 @@ const AboutPage = () => {
           </div>
 
           {/* JOB 3 */}
-          <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg hover:scale-105 transition-all duration-200" onMouseEnter={playCardHover}>
+          <div className="glass-card glass-hover p-6 md:p-8" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
-              <h3 className="text-xl md:text-2xl font-extrabold text-primary">
+              <h3 className="text-xl md:text-2xl font-extrabold text-primary glass-text">
                 Rapid Signal Electronics
               </h3>
-              <span className="text-sm md:text-base text-primary italic">
+              <span className="text-sm md:text-base text-primary italic glass-text-secondary">
                 June 2023 - August 2023
               </span>
             </div>
-            <p className="text-white italic mb-4 text-base md:text-lg">
+            <p className="text-white italic mb-4 text-base md:text-lg glass-text">
               Web Developer Intern
             </p>
-            <ul className="space-y-2 text-base md:text-lg text-gray-300">
+            <ul className="space-y-2 text-base md:text-lg text-gray-300 glass-text-secondary">
               <li>• Developed interactive web features and supported backend development.</li>
               <li>• Designed and implemented new web pages and integrated multimedia assets.</li>
               <li>• Acquired hands-on experience using Blazor and ASP.NET frameworks.</li>
@@ -122,12 +122,12 @@ const AboutPage = () => {
 
       {/* Education Section */}
       <section className="mt-16">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center lg:text-left">Education</h2>
-        <div className="bg-base-200 rounded-2xl p-6 md:p-8 shadow-lg" onMouseEnter={playCardHover}>
-          <h3 className="text-xl md:text-2xl font-bold mb-2">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center lg:text-left glass-text">Education</h2>
+        <div className="glass-card glass-hover p-6 md:p-8" onMouseEnter={playCardHover}>
+          <h3 className="text-xl md:text-2xl font-bold mb-2 glass-text">
             Notre Dame of Dadiangas University
           </h3>
-          <p className="text-base md:text-lg text-primary italic">
+          <p className="text-base md:text-lg text-primary italic glass-text-secondary">
             June 2019 - November 2024
           </p>
         </div>
