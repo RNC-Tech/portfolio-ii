@@ -20,7 +20,7 @@ deliverables:
   - Motion Graphic Animations
   - Custom Sprite Character Animations
   - GIFs
-image: "https://i.imgur.com/ibv7fu9.gif"
+image: "/motion-graphics/image_1.png"
 gallery:
   - type: "video"
     src: "https://www.youtube.com/watch?v=3FrmSY-m3nQ"
