@@ -15,7 +15,7 @@ const NavBar = () => {
         <div className='rounded-full flex justify-center items-center h-full w-fit px-4 glass-nav 2xl:px-16 gap-4'>
             <div className="relative flex flex-col items-center group">
                 <Link href='/'>
-                    <button className='glass-btn glass-hover btn-circle hover:scale-180 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
+                    <button className='glass-btn glass-hover btn-circle hover:scale-140 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -37,7 +37,7 @@ const NavBar = () => {
             
             <div className="relative flex flex-col items-center group">
                 <Link href='/about'>
-                    <button className='glass-btn glass-hover btn-circle hover:scale-180 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
+                    <button className='glass-btn glass-hover btn-circle hover:scale-140 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -59,7 +59,7 @@ const NavBar = () => {
             
             <div className="relative flex flex-col items-center group">
                 <Link href='/projects'>
-                    <button className='glass-btn glass-hover btn-circle hover:scale-180 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
+                    <button className='glass-btn glass-hover btn-circle hover:scale-140 transition-all duration-100 active:scale-150' onMouseEnter={playButtonHover} onClick={playButtonClick}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
