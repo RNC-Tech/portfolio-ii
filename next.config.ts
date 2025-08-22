@@ -1,15 +1,22 @@
 import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === 'production';
+const basePath = isProd ? '/portfolio-ii/projects' : '';
 
 const nextConfig: NextConfig = {
-  basePath: isProd ? '/portfolio-ii/projects' : '',
+  basePath,
+  assetPrefix: basePath,
   output: 'export',
   distDir: 'dist',
   images: {
     unoptimized: true,
-    path: isProd ? '/portfolio-ii/projects/_next/image' : '/_next/image',
-  }
+    path: `${basePath}/_next/image`,
+    loader: 'custom',
+    loaderFile: './image-loader.js',
+  },
+  publicRuntimeConfig: {
+    basePath: basePath,
+  },
 };
 
 export default nextConfig;
