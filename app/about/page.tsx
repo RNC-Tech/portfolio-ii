@@ -61,20 +61,21 @@ const AboutPage = () => {
           <div className="glass-card glass-hover p-6 md:p-8" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <h3 className="text-xl md:text-2xl font-extrabold text-primary glass-text">
-                Freelance Graphic Designer
+                Freelance Graphic Designer & Motion Graphic Designer
               </h3>
               <span className="text-sm md:text-base text-primary italic glass-text-secondary">
                 2019 - Onwards
               </span>
             </div>
             <p className="text-white italic mb-4 text-base md:text-lg glass-text">
-              Full Stack Developer &amp; Graphic Designer
+              Graphic Designer &amp; Motion Graphic Designer
             </p>
             <ul className="space-y-2 text-base md:text-lg text-gray-300 glass-text-secondary">
               <li>• Created branding assets for a client&apos;s upcoming initiative.</li>
-              <li>• Designed the user interface using CSS, Bootstrap, and wireframes built in Figma.</li>
               <li>• Designed and implemented multiple landing templates.</li>
-              <li>• Implemented front-end designs</li>
+              <li>• Created motion graphic assets for a client&apos;s upcoming initiative.</li>
+              <li>• Created posters for a client&apos;s marketing campaign.</li>
+              <li>• Created social media posts for a client&apos;s marketing campaign.</li>
             </ul>
           </div>
 
