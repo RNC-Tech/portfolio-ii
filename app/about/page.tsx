@@ -17,10 +17,15 @@ const AboutPage = () => {
           <div className="avatar hover:scale-105 transition-all duration-200 active:scale-95">
             <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden">
               <Image 
-                src="/dp1.gif" 
+                src={
+                  process.env.NODE_ENV === 'production' 
+                    ? '/portfolio-ii/dp1.gif' 
+                    : '/dp1.gif'
+                }
                 alt="Rence Simbaya profile picture"
                 width={256}
                 height={256}
+                unoptimized
                 className="rounded-full object-cover w-full h-full"
               />
             </div>

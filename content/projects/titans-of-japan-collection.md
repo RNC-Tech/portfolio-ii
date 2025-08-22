@@ -16,14 +16,14 @@ deliverables:
   - Shirt Designs
   - Social Media Assets
   - Shirt Mockups (x3)
-image: "/titans-of-japan/image_1.png"
+image: "/portfolio-ii/titans-of-japan/image_1.png"
 gallery:
   - type: "image"
-    src: "/titans-of-japan/image_2.png"
+    src: "/portfolio-ii/titans-of-japan/image_2.png"
   - type: "image"
-    src: "/titans-of-japan/image_3.png"
+    src: "/portfolio-ii/titans-of-japan/image_3.png"
   - type: "image"
-    src: "/titans-of-japan/image_1.png"
+    src: "/portfolio-ii/titans-of-japan/image_1.png"
   - type: "video"
     src: "https://www.youtube.com/watch?v=vVdYxPEiXjc"
 links:
