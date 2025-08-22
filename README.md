@@ -34,9 +34,7 @@ All project images are stored in `public/` and served locally:
 - **SEO** → Improved Core Web Vitals, better rankings  
 
 
----
 
-### **Chunk 6 — Learn More & Deployment**
 ```markdown
 ## 📚 Learn More
 - [Next.js Documentation](https://nextjs.org/docs)  
