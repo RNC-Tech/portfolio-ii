@@ -29,7 +29,7 @@ const Page = () => {
           <div className="flex-shrink-0 flex justify-center lg:justify-start w-full lg:w-auto">
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl">
               <Image 
-                src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDBvMjN0ZHpjd2V5NmhoYTM2aWphdXNnZXh0ZGI4MmQ4cDlsZTc4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/935gCxva4XOcgtBbdO/giphy.gif" 
+                src="/hero-animation.gif" 
                 alt="Visuals with Purpose" 
                 width={384}
                 height={384}
