@@ -16,18 +16,18 @@ deliverables:
   - Shirt Designs
   - Social Media Assets
   - Shirt Mockups (x3)
-image: "https://i.imgur.com/h4wkBwT.png"
+image: "/passion-for-performance/image_1.png"
 gallery:
   - type: "image"
-    src: "https://i.imgur.com/2GWhbRn.gif"
+    src: "/passion-for-performance/image_2.png"
   - type: "image"
-    src: "https://i.imgur.com/h4wkBwT.png"
+    src: "/passion-for-performance/image_1.png"
   - type: "image"
-    src: "https://i.imgur.com/Fhrhmk3.jpeg"
+    src: "/passion-for-performance/image_3.png"
   - type: "image"
-    src: "https://i.imgur.com/I1S4QMS.png"
+    src: "/passion-for-performance/image_4.png"
   - type: "image"
-    src: "https://i.imgur.com/EBWe42c.jpeg"
+    src: "/passion-for-performance/image_1.png"
 links:
   live: ""
   github: ""
