@@ -17,7 +17,7 @@ const AboutPage = () => {
           <div className="avatar hover:scale-105 transition-all duration-200 active:scale-95">
             <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden">
               <Image 
-                src="https://i.imgur.com/rMr9iBA.gif" 
+                src="/dp1.gif" 
                 alt="Rence Simbaya profile picture"
                 width={256}
                 height={256}
@@ -56,7 +56,29 @@ const AboutPage = () => {
       <section className="mt-16">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center lg:text-left glass-text">Work Experience</h2>
         <div className="space-y-6">
+
           {/* JOB 1 */}
+          <div className="glass-card glass-hover p-6 md:p-8" onMouseEnter={playCardHover}>
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
+              <h3 className="text-xl md:text-2xl font-extrabold text-primary glass-text">
+                Freelance Graphic Designer
+              </h3>
+              <span className="text-sm md:text-base text-primary italic glass-text-secondary">
+                2019 - Onwards
+              </span>
+            </div>
+            <p className="text-white italic mb-4 text-base md:text-lg glass-text">
+              Full Stack Developer &amp; Graphic Designer
+            </p>
+            <ul className="space-y-2 text-base md:text-lg text-gray-300 glass-text-secondary">
+              <li>• Created branding assets for a client&apos;s upcoming initiative.</li>
+              <li>• Designed the user interface using CSS, Bootstrap, and wireframes built in Figma.</li>
+              <li>• Designed and implemented multiple landing templates.</li>
+              <li>• Implemented front-end designs</li>
+            </ul>
+          </div>
+
+          {/* JOB 2 */}
           <div className="glass-card glass-hover p-6 md:p-8" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <h3 className="text-xl md:text-2xl font-extrabold text-primary glass-text">
@@ -77,7 +99,7 @@ const AboutPage = () => {
             </ul>
           </div>
 
-          {/* JOB 2 */}
+          {/* JOB 3 */}
           <div className="glass-card glass-hover p-6 md:p-8" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <h3 className="text-xl md:text-2xl font-extrabold text-primary glass-text">
@@ -98,7 +120,7 @@ const AboutPage = () => {
             </ul>
           </div>
 
-          {/* JOB 3 */}
+          {/* JOB 4 */}
           <div className="glass-card glass-hover p-6 md:p-8" onMouseEnter={playCardHover}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <h3 className="text-xl md:text-2xl font-extrabold text-primary glass-text">
