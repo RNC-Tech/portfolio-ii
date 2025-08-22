@@ -11,12 +11,12 @@ skills:
   - Design Mockup
 deliverables:
   - Product Mockup
-image: "https://i.imgur.com/j8YTinm.png"
+image: "/gt-cap/image_1.png"
 gallery:
   - type: "image"
-    src: "https://i.imgur.com/j8YTinm.png"
+    src: "/gt-cap/image_1.png"
   - type: "image"
-    src: "https://i.imgur.com/WHv49XD.png"
+    src: "/gt-cap/image_2.png"
 links:
   live: ""
   github: ""
