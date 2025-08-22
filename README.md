@@ -35,7 +35,6 @@ All project images are stored in `public/` and served locally:
 
 
 
-```markdown
 ## 📚 Learn More
 - [Next.js Documentation](https://nextjs.org/docs)  
 - [Learn Next.js](https://nextjs.org/learn)  
