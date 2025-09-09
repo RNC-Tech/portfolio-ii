@@ -29,7 +29,7 @@ const Page = () => {
           <div className="flex-shrink-0 flex justify-center lg:justify-start w-full lg:w-auto">
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl">
               <Image
-                src="/hero-animation.gif"
+                src="/portfolio-ii/hero-animation.gif"
                 alt="Visuals with Purpose"
                 width={384}
                 height={384}
