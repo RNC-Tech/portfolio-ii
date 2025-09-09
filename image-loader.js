@@ -1,4 +1,4 @@
-const assetPrefix = process.env.NODE_ENV === 'production' ? '/portfolio-ii' : '';
+const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH;
 
 module.exports = function customLoader({ src, width, quality }) {
   // Remove any leading slashes to prevent double slashes

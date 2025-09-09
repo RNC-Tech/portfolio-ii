@@ -1,11 +1,10 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '/portfolio-ii/projects' : '';
+const basePath = '/portfolio-ii';
 
 const nextConfig: NextConfig = {
   basePath,
-  assetPrefix: basePath.endsWith('/') ? basePath.slice(0, -1) : basePath,
+  assetPrefix: basePath,
   output: 'export',
   distDir: 'dist',
   trailingSlash: true,
@@ -13,6 +12,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     loader: 'custom',
     loaderFile: './image-loader.js',
+    path: `${basePath}/_next/image`,
   },
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
