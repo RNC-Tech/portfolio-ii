@@ -10,9 +10,6 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true,
-    loader: 'custom',
-    loaderFile: './image-loader.js',
-    path: `${basePath}/_next/image`,
   },
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
