@@ -8,7 +8,7 @@ const ProjectsPage = async () => {
 
   return (
     <div>
-       <ProjectList projects={projects}/>   
+       <ProjectList projects={projects}/>
     </div>
   )
 }
