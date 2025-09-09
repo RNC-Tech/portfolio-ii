@@ -9,7 +9,6 @@ const buttonClickSound = 'https://dz0i85a16ad4a.cloudfront.net/t8ux6w%2Ffile%2F9
 const Page = () => {
   const playButtonHover = useSound(buttonHoverSound, 0.2);
   const playButtonClick = useSound(buttonClickSound, 0.2);
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   const handleButtonClick = () => {
     // Play button click sound
@@ -30,7 +29,7 @@ const Page = () => {
           <div className="flex-shrink-0 flex justify-center lg:justify-start w-full lg:w-auto">
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl">
               <Image
-                src={`/hero-animation.gif`}
+                src="/hero-animation.gif"
                 alt="Visuals with Purpose"
                 width={384}
                 height={384}
