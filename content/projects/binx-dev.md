@@ -2,7 +2,7 @@
 id: 9
 title: "Binx Dev Rebranding"
 slug: "binx-dev"
-description: "Binx is a web development agency based in General Santos City. I created the branding assets for Binx Dev, a project focused on developing a distinct visual identity that reflects the agency's innovative approach and professional services. This branding effort encompassed logo design, color palette selection, typography, and the creation of various marketing materials to establish a strong and recognizable presence in the digital landscape."
+description: "Binx is a web development agency based in General Santos City. Created the branding assets for Binx Dev, a project focused on developing a distinct visual identity that reflects the agency's innovative approach and professional services. This branding effort encompassed logo design, color palette selection, typography, and the creation of various marketing materials to establish a strong and recognizable presence in the digital landscape."
 publishedDate: "2025-10-07"
 role: "Graphic Designer"
 status: "Completed"
