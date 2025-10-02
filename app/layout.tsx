@@ -5,7 +5,6 @@ import Transition from "./components/Transition";
 import AudioControl from "./components/AudioControl";
 import { FloatingDock } from "../components/ui/floating-dock";
 import { FloatingDockDaisyUI } from "@/components/ui/FloatingDockDaisyUI";
-import { navItems } from "../components/ui/floating-dock";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
