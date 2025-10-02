@@ -33,10 +33,10 @@ const ProjectDetailClient = ({ project }: { project: Project }) => {
       </div>
 
       {/* DaisyUI Tabs Border */}
-      <div role="tablist" className="tabs tabs-border">
+      <div role="tablist" className="tabs tabs-lift">
         <a 
           role="tab" 
-          className={`tab ${activeTab === 'about' ? 'tab-active' : ''}`}
+          className={`tab glass-tab ${activeTab === 'about' ? 'tab-active' : ''}`}
           onClick={() => handleTabClick('about')}
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-4 me-2">
@@ -46,7 +46,7 @@ const ProjectDetailClient = ({ project }: { project: Project }) => {
         </a>
         <a 
           role="tab" 
-          className={`tab ${activeTab === 'gallery' ? 'tab-active' : ''}`}
+          className={`tab glass-tab ${activeTab === 'gallery' ? 'tab-active' : ''}`}
           onClick={() => handleTabClick('gallery')}
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-4 me-2">
@@ -57,9 +57,8 @@ const ProjectDetailClient = ({ project }: { project: Project }) => {
       </div>
 
       {/* Tab Content */}
-      <div className="mt-6">
         {/* About Tab Content */}
-        <div className={`tab-content ${activeTab === 'about' ? 'block' : 'hidden'}`}>
+        <div className={`tab-content glass-card no-hover p-6 md:p-8 ${activeTab === 'about' ? 'block' : 'hidden'}`}>
           <div className="space-y-12">
             {/* About This Project */}
             <section>
@@ -81,7 +80,7 @@ const ProjectDetailClient = ({ project }: { project: Project }) => {
                     {/* Status */}
                     <div className="mb-4">
                       <h4 className="text-sm font-medium text-gray-400 mb-2 glass-text-secondary">Status</h4>
-                      <span className="badge badge-success badge-sm">
+                      <span className="badge badge-success badge-sm px-3">
                         {project.status || 'Completed'}
                       </span>
                     </div>
@@ -104,13 +103,13 @@ const ProjectDetailClient = ({ project }: { project: Project }) => {
                         {project.skills.slice(0, 6).map((skill, index) => (
                           <span 
                             key={index}
-                            className="badge badge-primary badge-sm"
+                            className="badge badge-primary badge-sm px-3"
                           >
                             {skill}
                           </span>
                         ))}
                         {project.skills.length > 6 && (
-                          <span className="badge badge-outline badge-sm">
+                          <span className="badge badge-outline badge-sm px-3">
                             +{project.skills.length - 6} more
                           </span>
                         )}
@@ -204,7 +203,7 @@ const ProjectDetailClient = ({ project }: { project: Project }) => {
         </div>
 
         {/* Gallery Tab Content */}
-        <div className={`tab-content ${activeTab === 'gallery' ? 'block' : 'hidden'}`}>
+        <div className={`tab-content glass-card no-hover p-6 md:p-8 ${activeTab === 'gallery' ? 'block' : 'hidden'}`}>
           <section>
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center lg:text-left glass-text">Project Gallery</h2>
             <ProjectGallery 
@@ -214,7 +213,6 @@ const ProjectDetailClient = ({ project }: { project: Project }) => {
             />
           </section>
         </div>
-      </div>
     </main>
   )
 }

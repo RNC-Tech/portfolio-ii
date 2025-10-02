@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Image from 'next/image'
 
 // Define GalleryItem type
@@ -22,20 +22,29 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
   const videoDialogRefs = useRef<(HTMLDialogElement | null)[]>([]);
   const videoMediaRefs = useRef<(HTMLIFrameElement | HTMLVideoElement | null)[]>([]);
 
+  const [activeGalleryTab, setActiveGalleryTab] = useState<'images' | 'videos'>('images');
+
+  const handleGalleryTabClick = (tab: 'images' | 'videos') => {
+    setActiveGalleryTab(tab);
+  };
+
   return (
     <div className="rounded-2xl">
-      {/* DaisyUI Tabs - LIFT STYLE */}
-      <div className="tabs tabs-lift mb-6 w-full rounded-2xl">
+      {/* DaisyUI Tabs - BORDER STYLE */}
+      <div role="tablist" className="tabs tabs-lift mb-6 w-full rounded-2xl">
         {/* Images Tab */}
-        <label className="tab">
-          <input type="radio" name={`gallery_tabs_${projectId}`} defaultChecked />
+        <a 
+          role="tab" 
+          className={`tab glass-tab ${activeGalleryTab === 'images' ? 'tab-active' : ''}`}
+          onClick={() => handleGalleryTabClick('images')}
+        >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-4 me-2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5V7.5A2.25 2.25 0 0 1 5.25 5.25h13.5A2.25 2.25 0 0 1 21 7.5v9a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 16.5Zm0 0 5.25-5.25a2.25 2.25 0 0 1 3.182 0l.318.318m0 0 2.25 2.25m-2.25-2.25 2.25-2.25a2.25 2.25 0 0 1 3.182 0L21 16.5" />
           </svg>
           Images
-        </label>
-        <div className="tab-content border-base-300 p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        </a>
+        <div className={`tab-content glass-card no-hover p-6 ${activeGalleryTab === 'images' ? 'block' : 'hidden'}`}>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {images.length > 0 ? (
               images.map((item, index) => {
                 return (
@@ -66,16 +75,18 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
                       id={`modal_${projectId}_img_${index}`}
                       className="modal"
                     >
-                      <div className="modal-box w-full h-screen max-w-none max-h-none m-0 rounded-none glass-modal">
+                      <div className="modal-box w-11/12 max-w-3xl p-6 glass-modal transition-all duration-300 md:p-8 lg:p-10 max-h-[90vh]">
                         <div className="flex flex-col h-full">
                           <div className="flex justify-end mb-4">
                             <form method="dialog">
-                              <button 
-                                className="btn btn-sm btn-circle btn-ghost"
-                                type="submit"
-                              >
-                                ✕
-                              </button>
+                              <div className="tooltip tooltip-bottom" data-tip="Close">
+                                <button 
+                                  className="btn btn-sm btn-circle btn-ghost text-white z-50 sticky top-4 right-4"
+                                  type="submit"
+                                >
+                                  ✕
+                                </button>
+                              </div>
                             </form>
                           </div>
                           <div className="flex-1 flex flex-col items-center justify-center">
@@ -90,7 +101,7 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
                           </div>
                         </div>
                       </div>
-                      <form method="dialog" className="modal-backdrop glass-overlay">
+                      <form method="dialog" className="modal-backdrop glass-overlay transition-all duration-300">
                         <button>close</button>
                       </form>
                     </dialog>
@@ -103,15 +114,18 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
           </div>
         </div>
         {/* Videos Tab */}
-        <label className="tab">
-          <input type="radio" name={`gallery_tabs_${projectId}`} />
+        <a 
+          role="tab" 
+          className={`tab glass-tab ${activeGalleryTab === 'videos' ? 'tab-active' : ''}`}
+          onClick={() => handleGalleryTabClick('videos')}
+        >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-4 me-2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
           </svg>
           Videos
-        </label>
-        <div className="tab-content border-base-300 p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        </a>
+        <div className={`tab-content glass-card no-hover p-6 ${activeGalleryTab === 'videos' ? 'block' : 'hidden'}`}>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {videos.length > 0 ? (
               videos.map((item, index) => {
                 return (
@@ -169,16 +183,18 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
                         }
                       }}
                     >
-                      <div className="modal-box w-full h-screen max-w-none max-h-none m-0 rounded-none glass-modal">
+                      <div className="modal-box w-11/12 max-w-5xl p-6 glass-modal transition-all duration-300 md:p-8 lg:p-10 max-h-[90vh]">
                         <div className="flex flex-col h-full">
                           <div className="flex justify-end mb-4">
                             <form method="dialog">
-                              <button 
-                                className="btn btn-sm btn-circle btn-ghost"
-                                type="submit"
-                              >
-                                ✕
-                              </button>
+                              <div className="tooltip tooltip-bottom" data-tip="Close">
+                                <button 
+                                  className="btn btn-sm btn-circle btn-ghost text-white z-50 sticky top-4 right-4"
+                                  type="submit"
+                                >
+                                  ✕
+                                </button>
+                              </div>
                             </form>
                           </div>
                           <div className="flex-1 flex flex-col items-center justify-center px-4">
@@ -207,7 +223,7 @@ const ProjectGallery = ({ projectId, projectTitle, gallery }: ProjectGalleryProp
                           </div>
                         </div>
                       </div>
-                      <form method="dialog" className="modal-backdrop glass-overlay">
+                      <form method="dialog" className="modal-backdrop glass-overlay transition-all duration-300">
                         <button>close</button>
                       </form>
                     </dialog>
