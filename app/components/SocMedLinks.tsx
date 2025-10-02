@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react'
+import React, { useState } from 'react'
 import useSound from './useSound';
 
 const buttonHoverSound = 'https://cdn.pixabay.com/audio/2025/01/14/audio_5ba8ff5311.mp3';
@@ -9,6 +9,29 @@ const buttonClickSound = 'https://cdn.pixabay.com/audio/2024/09/22/audio_6b77bae
 const SocMedLinks = () => {
     const playButtonHover = useSound(buttonHoverSound, 0.2);
     const playButtonClick = useSound(buttonClickSound, 0.2);
+    const [emailButtonText, setEmailButtonText] = useState('Email');
+    const [showTooltip, setShowTooltip] = useState(false);
+
+    const handleEmailClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        playButtonClick();
+        const emailAddress = 'rncsimbaya@gmail.com';
+        setEmailButtonText(emailAddress);
+
+        try {
+            await navigator.clipboard.writeText(emailAddress);
+            setShowTooltip(true);
+            setTimeout(() => {
+                setShowTooltip(false);
+            }, 2000); // Tooltip visible for 2 seconds
+        } catch (err) {
+            console.error('Failed to copy email to clipboard:', err);
+        }
+
+        setTimeout(() => {
+            setEmailButtonText('Email');
+        }, 5000); // Revert after 5 seconds
+    };
     return (
         <div className='flex gap-2'>
             <a
@@ -39,17 +62,25 @@ const SocMedLinks = () => {
                 <span className="hidden md:inline">Upwork</span>
             </a>
 
-            <a
-                href="mailto:rncsimbaya@gmail.com"
-                className="glass-btn glass-hover h-12 px-5 text-base md:h-8 md:px-3 md:text-sm w-fit rounded-full flex items-center gap-2"
-                onMouseEnter={playButtonHover}
-                onClick={playButtonClick}
-            >
-                <svg aria-label="Email logo" width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-4 md:h-4">
-                    <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.25l7.47 6.27a1 1 0 001.06 0L20 8.25V18H4z"/>
-                </svg>
-                <span className="hidden md:inline">Email</span>
-            </a>
+            <div className="relative">
+                {showTooltip && (
+                    <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-white text-xs rounded py-1 px-2 flex items-center gap-1 z-10 whitespace-nowrap opacity-0 animate-fade-in-out-tooltip glass-tooltip-bg">
+                        <svg className="w-4 h-4" fill="none" stroke="#ee8e08" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Copied to clipboard!
+                    </div>
+                )}
+                <a
+                    href="mailto:rncsimbaya@gmail.com"
+                    className="glass-btn glass-hover h-12 px-5 text-base md:h-8 md:px-3 md:text-sm w-fit rounded-full flex items-center gap-2"
+                    onMouseEnter={playButtonHover}
+                    onClick={handleEmailClick}
+                >
+                    <svg aria-label="Email logo" width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-4 md:h-4">
+                        <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.25l7.47 6.27a1 1 0 001.06 0L20 8.25V18H4z"/>
+                    </svg>
+                    <span className={`hidden md:inline ${emailButtonText !== 'Email' ? 'animate-fade-in-out' : ''}`}>{emailButtonText}</span>
+                </a>
+            </div>
         </div>
 
        
