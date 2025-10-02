@@ -572,3 +572,30 @@ input[type="button"]:hover,
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes fade-in-out {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-fade-in-out {
+  animation: fade-in-out 3s ease-in-out;
+}
+
+@keyframes fade-in-out-tooltip {
+  0% { opacity: 0; transform: translate(-50%, 0); }
+  20% { opacity: 1; transform: translate(-50%, 2px); }
+  80% { opacity: 1; transform: translate(-50%, 2px); }
+  100% { opacity: 0; transform: translate(-50%, 0); }
+}
+
+.animate-fade-in-out-tooltip {
+  animation: fade-in-out-tooltip 2s ease-in-out forwards;
+}
+
+.glass-tooltip-bg {
+  background-color: rgba(75, 85, 99, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}

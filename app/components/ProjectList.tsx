@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Project } from '../../lib/projects'
 import useSound from './useSound'
+import { CometCard } from '../../components/ui/comet-card'
 
 const cardHoverSound = 'https://d2rfm1awsiaf19.cloudfront.net/b8wx6w%2Ffile%2F4c2b753e4351058561347b3592978921_08a71d3441ba5e732ff88c7fcb3a156a.wav?response-content-disposition=inline%3Bfilename%3D%224c2b753e4351058561347b3592978921_08a71d3441ba5e732ff88c7fcb3a156a.wav%22%3B&response-content-type=audio%2Fx-wav&Expires=1751683552&Signature=X2It5z7zAKUfhgtDfj1EVt-vcOkkA1ciAkBi60lU~L0wSxOXbwlWSRgqpHFFtPJr0iYrkrXpPmA1WojXJzGNxVjYLFh6cpAI0HE8jJRBaoMBnAtq67zUakXCFDY7H8yYFVX8Vm9u8P4Ej9eBZu8PSwJeIFI5xQuRXNkP6LFiTCngjteoZB3p4HHOWsQH9063eQrEX~~CoVduKnHURfk-eNoigkdAW57SF6sCW0oB5U9xAkdLKhoWIAfW2jRU2jNTJCzXq442xJiQCa7vAgfGXTLP67u1a2kdN6aiJb23~xMY7CUfsJOvizlI4nGJpdyN3D982s6o3xdg5qbuaoV~tw__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ';
 const buttonHoverSound = 'https://cdn.pixabay.com/audio/2025/01/14/audio_5ba8ff5311.mp3';
@@ -47,7 +48,7 @@ const ProjectList = ({ projects }: ProjectListProps) => {
   return (
     <div className="flex-wrap justify-center gap-6 flex">
       {validProjects.map((project: Project) => (
-        <div key={`${project.id}-${project.slug}`} className="glass-card glass-hover w-full md:w-96 rounded-2xl transition-discretefy-items-stretch justify-self-auto justify-items-start" onMouseEnter={playCardHover}>
+        <CometCard key={`${project.id}-${project.slug}`} onMouseEnter={playCardHover} className="w-full md:w-96 rounded-2xl transition-discretefy-items-stretch justify-self-auto justify-items-start min-h-[450px]">
             <Link href={`/projects/projectdetails/${project.slug}`}>
                 <div>
                     <Image 
@@ -69,7 +70,7 @@ const ProjectList = ({ projects }: ProjectListProps) => {
               </Link>
             </div>
           </div>
-        </div>
+        </CometCard>
       ))}
     </div>
   )
