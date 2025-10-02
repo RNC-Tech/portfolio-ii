@@ -9,7 +9,7 @@ const cardHoverSound = 'https://d2rfm1awsiaf19.cloudfront.net/b8wx6w%2Ffile%2F4c
 const AboutPage = () => {
   const playCardHover = useSound(cardHoverSound, 0.2);
   return (
-    <main className="w-full max-w-6xl mx-auto">
+    <main className="w-full max-w-6xl mx-auto pb-16">
       {/* Hero Section */}
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
         {/* Profile Picture */}
@@ -20,7 +20,7 @@ const AboutPage = () => {
                 src={
                   process.env.NODE_ENV === 'production' 
                     ? '/portfolio-ii/dp1.gif' 
-                    : '/dp1.gif'
+                    : '/portfolio-ii/dp1.gif'
                 }
                 alt="Rence Simbaya profile picture"
                 width={256}

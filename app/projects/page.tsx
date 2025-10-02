@@ -7,7 +7,8 @@ const ProjectsPage = async () => {
   const projects = getAllProjects()
 
   return (
-    <div>
+    <div className='pt-16 text-center'>
+       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 glass-text pb-4">Projects</h1>
        <ProjectList projects={projects}/>
     </div>
   )
